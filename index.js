@@ -2,3 +2,7 @@
 var Faker = require('./lib');
 var faker = new Faker({ locales: require('./lib/locales') });
 module['exports'] = faker;
+
+console.log(faker.cars.suv());
+console.log(faker.cars.sedan());
+console.log(faker.cars.hatchback());
